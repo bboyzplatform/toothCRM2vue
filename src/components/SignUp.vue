@@ -44,17 +44,13 @@ import firebase from 'firebase'
 
 export default {
   name: 'signUp',
-  data () {
+  data: function () {
     return {
       email: '',
       password: ''
     }
   },
   methods: {
-     login: function() {
-      console.log(this)
-      this.$router.replace('tooth_crm')
-    },
     signUp: function() {
       firebase.auth()
         .createUserWithEmailAndPassword(this.email, this.password)

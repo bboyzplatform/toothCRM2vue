@@ -17,15 +17,27 @@ var config = {
 };
 
 firebase.initializeApp(config);
-firebase.auth().onAuthStateChanged(function(user){
-  if(!app) {
+const database = firebase.database()
+
+database.ref('customer').on('value', (snapshot)=>{
+  console.log(snapshot.val())
+})
+
+
+/* firebase.auth().onAuthStateChanged(function(user){
+  if(!app) { */
     /* eslint-disable no-new */
-    app = new Vue({
+    new Vue({
       el: '#app',
       router,
       components: { App },
-      template: '<App/>'
+      template: '<App/>',
+      data: function(){
+        return {
+          customers: []
+      }
+    }
     })
-  }
-})
+   //}
+//})
 

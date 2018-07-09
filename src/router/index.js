@@ -4,7 +4,10 @@ import HelloWorld from '@/components/HelloWorld'
 import Login from '@/components/Login'
 import SignUp from '@/components/SignUp'
 import ToothCRM from '@/components/ToothCRM'
-
+import firebase from 'firebase'
+import Vuesax from 'vuesax'
+import 'vuesax/dist/vuesax.css' //Vuesax styles
+Vue.use(Vuesax)
 Vue.use(Router)
 
 let router = new Router({
@@ -46,5 +49,4 @@ router.beforeEach((to, from, next)=>{
   else if(!requiresAuth && currentUser) next('tooth_crm')
   else next()
 })
-
 export default router

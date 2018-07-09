@@ -10,17 +10,19 @@
                             <!-- <img src="../assets/app-icon-grid-lg.png"> -->
                             <img src="../assets/dental_img.png">
                         </figure>
-                        <p>{{ msg }}</p>
+                       <!--  <p>{{ msg }}</p>; -->
                         <form>
                             <div class="field">
                                 <div class="control">
-                                    <input class="input is-large" type="email" placeholder="Ваш E-mail\Логин" autofocus="">
+                                    <input class="input is-large" type="email" placeholder="Ваш E-mail\Логин" autofocus=""
+                                    v-model="email">
                                 </div>
                             </div>
 
                             <div class="field">
                                 <div class="control">
-                                    <input class="input is-large" type="password" placeholder="Ваш пароль">
+                                    <input class="input is-large" type="password" placeholder="Ваш пароль"
+                                    v-model="password">
                                 </div>
                             </div>
                             <div class="field">
@@ -29,33 +31,47 @@
                                   Запомнить меня
                                 </label>
                             </div>
-                            <button
-                              class="button is-block is-info is-large is-fullwidth"
-                              v-on:click="login"
-                              >Login</button>
+                            <vs-button vs-color="primary" vs-type="border"
+                              v-on:click="signIn"
+                              >Войти</vs-button>
                         </form>
                     </div>
                     <p class="has-text-grey">
-                      <a class="button is-link is-rounded" v-on:click="signUp">Регистрация</a>
+                      <!-- <router-link to="/sign_up" class="button is-link is-rounded"></router-link> -->
+                      <vs-button vs-color="primary" vs-type="border" v-on:click="goToSignUp">Регистрация</vs-button>
                     </p>
+
                 </div>
             </div>
         </div>
     </section>
 </template>
 <script>
+import firebase from 'firebase'
+import Vuesax from 'vuesax'
+
 export default {
-  name: 'login',
+  name: 'Login',
   data () {
-    return {}
+    return {
+      email: '',
+      password: ''
+    }
   },
   methods: {
-    login: function() {
-      console.log(this)
-      this.$router.replace('tooth_crm')
-    },
-    signUp: function() {
+    goToSignUp: function(){
       this.$router.replace('sign_up')
+    },
+    signIn: function() {
+
+      firebase.auth().signInWithEmailAndPassword(this.email, this.password).then(
+        (user) => {
+          this.$router.replace('tooth_crm')
+        },
+        (error) => {
+          alert('Ошибка! ' + error.message)
+        }
+      )
     }
   }
 }
