@@ -1,15 +1,16 @@
 <template>
 <div>
   hello!
-  Tooth CRM
+  {{ msg }}
+  <button v-on:click="signOut">Выход</button>
 </div>
 </template>
 <script>
 export default {
-  name: 'Login',
+  name: 'ToothCrm',
   data () {
     return {
-      msg: 'Login page',
+      msg: 'Tooth CRM page',
       CRMConfig: {
         language: 'ru',
         themeUI: 'material', // 'ios', 'bootstrap-standart'
