@@ -12,14 +12,26 @@
   </div>
 
 </vs-topbar>
-  hello!
-  {{ msg }}
-
-<div class="centerx">
-    <vs-card vs-color="dark" id="div-with-loading">
-      <vs-card-header vs-background-color="dark" vs-title="A nice title" vs-subtitle="A nice subtitle" vs-icon="account_circle"></vs-card-header>
+ <vs-divider vs-color="primary">Пациенты</vs-divider>
+<div class="cards-container line">
+  <div class="centerx" v-for="customer of customers" v-bind:key="customer['.key']">
+    <vs-card vs-color="dark" id="div-with-loading"
+      >
+      <vs-card-header
+        vs-background-color="dark"
+        vs-subtitle="Пациент"
+        vs-icon="account_circle"
+        :vs-title="customer.fullname">
+      </vs-card-header>
       <vs-card-body class="vs-con-loading__container">
-        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+        <ul>
+          <li>adress: {{customer.adress}}</li>
+          <li>birthday: {{customer.birthday}}</li>
+          <li>gender: {{customer.gender}}</li>
+          <li>mail: {{customer.mail}}</li>
+          <li>phone: {{customer.phone}}</li>
+          <li>adress: {{customer.adress}}</li>
+        </ul>
       </vs-card-body>
       <vs-card-actions>
         <vs-button @click="noty" vs-color="dark" vs-type="flat"> Notify</vs-button>
@@ -28,15 +40,32 @@
     </vs-card>
   </div>
 </div>
+      <!-- anamnesis data -->
+      <vs-divider vs-color="primary"><b>Анамнезы из БД:</b></vs-divider>
+      <vs-row
+        vs-align="flex-start"
+        vs-type="flex" vs-justify="center" vs-w="12">
+
+        <vs-col vs-type="flex" vs-justify="center" vs-align="center" vs-w="2">
+          <ul>
+            <li v-for="item in anamnesis" v-bind:key="item['.key']">{{ item.text }}</li>
+          </ul>
+        </vs-col>
+      </vs-row>
+
+</div>
 </template>
 <script>
-import firebase from 'firebase'
+import { customersRef, anamnesisRef } from '../firebase'
 
 
 export default {
   name: 'ToothCrm',
-  data : function(){
+  data: function(){
     return {
+      customers: [],
+      anamnesis: [],
+      cname: 'Paul',
       msg: 'Tooth CRM page',
       CRMConfig: {
         language: 'ru',
@@ -47,6 +76,10 @@ export default {
       backgroundLoading:'primary',
       colorLoading:'#fff'
     }
+  },
+  firebase: {
+    customers: customersRef,
+    anamnesis: anamnesisRef
   },
   methods: {
     logout: function() {
@@ -95,6 +128,8 @@ export default {
 vs-topbar{
   justify-content: space-between;
 }
+.cards-container.line{
 
+}
 
 </style>
