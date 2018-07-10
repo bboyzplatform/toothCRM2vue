@@ -1,0 +1,854 @@
+{
+  "anamnesis": [{
+      "id": "1",
+      "text": "Заболевания зубов(статические)"
+    },
+    {
+      "id": "2",
+      "text": "Абсцесс зуба"
+    },
+    {
+      "id": "3",
+      "text": "Абфракция"
+    },
+    {
+      "id": "4",
+      "text": "Амелобластома"
+    },
+    {
+      "id": "5",
+      "text": "Апикальный периодонтит"
+    },
+    {
+      "id": "6",
+      "text": "Гиперестезия зубов"
+    },
+    {
+      "id": "7",
+      "text": "Гипоплазия зубов"
+    },
+    {
+      "id": "8",
+      "text": "Гипофосфатазия"
+    },
+    {
+      "id": "9",
+      "text": "Кариес зубов"
+    },
+    {
+      "id": "10",
+      "text": "Клиновидный дефект"
+    },
+    {
+      "id": "11",
+      "text": "Некариозные поражения зубов"
+    },
+    {
+      "id": "12",
+      "text": "Патологическая стираемость зубов"
+    },
+    {
+      "id": "13",
+      "text": "Пульпит"
+    },
+    {
+      "id": "14",
+      "text": "Стоматологическая травма"
+    },
+    {
+      "id": "15",
+      "text": "Флюороз(стоматология)"
+    },
+    {
+      "id": "16",
+      "text": "Цементома"
+    },
+    {
+      "id": "17",
+      "text": "Эрозия эмали зубов"
+    }
+  ],
+  "customers": [{
+      "adress": "WWW l",
+      "birthday": "20.01.1991",
+      "fullname": "Иванов Иван Иванович",
+      "gender": "Мужской",
+      "id": "1",
+      "mail": "ivani4@gmaыфвсфывil.com",
+      "phone": "+7999777777",
+      "serviceHistory": [{
+          "Врач": "Ананасов Василий Петрович",
+          "Дата": "07.10.2017",
+          "Комментарии": "Сильное разрушение у корней,решено удалять",
+          "Номер зуба": "14",
+          "Процедуры": "Осмотр"
+        },
+        {
+          "Врач": "Докторов Иван Иванович",
+          "Дата": "08.10.2017",
+          "Комментарии": "Удаление прошло успешно, осложнений нет",
+          "Номер зуба": "14",
+          "Процедуры": "Удаление зуба"
+        }
+      ],
+      "tooth_map": [{
+          "color": "gray",
+          "legendabbr": "О",
+          "mobilityrate": "0",
+          "position": "11",
+          "state": "removed"
+        },
+        {
+          "color": "blue",
+          "legendabbr": "И",
+          "mobilityrate": "1",
+          "position": "12",
+          "state": "implant"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "",
+          "position": "13",
+          "state": "heal"
+        },
+        {
+          "color": "gray",
+          "legendabbr": "О",
+          "mobilityrate": "0",
+          "position": "14",
+          "state": "removed"
+        },
+        {
+          "color": "green",
+          "legendabbr": " ",
+          "mobilityrate": "",
+          "position": "15",
+          "state": "heal"
+        },
+        {
+          "color": "blue",
+          "legendabbr": "И",
+          "mobilityrate": "1",
+          "position": "16",
+          "state": "implant"
+        },
+        {
+          "color": "blue",
+          "legendabbr": "И",
+          "mobilityrate": "1",
+          "position": "17",
+          "state": "implant"
+        },
+        {
+          "color": "blue",
+          "legendabbr": "И",
+          "mobilityrate": "",
+          "position": "18",
+          "state": "implant"
+        },
+        {
+          "color": "blue",
+          "legendabbr": "И",
+          "mobilityrate": "",
+          "position": "21",
+          "state": "implant"
+        },
+        {
+          "color": "blue",
+          "legendabbr": "И",
+          "mobilityrate": "1",
+          "position": "22",
+          "state": "implant"
+        },
+        {
+          "color": "blue",
+          "legendabbr": "И",
+          "mobilityrate": "1",
+          "position": "23",
+          "state": "implant"
+        },
+        {
+          "color": "blue",
+          "legendabbr": "И",
+          "mobilityrate": "1",
+          "position": "24",
+          "state": "implant"
+        },
+        {
+          "color": "blue",
+          "legendabbr": "И",
+          "mobilityrate": "1",
+          "position": "25",
+          "state": "implant"
+        },
+        {
+          "color": "blue",
+          "legendabbr": "И",
+          "mobilityrate": "1",
+          "position": "26",
+          "state": "implant"
+        },
+        {
+          "color": "blue",
+          "legendabbr": "И",
+          "mobilityrate": "1",
+          "position": "27",
+          "state": "implant"
+        },
+        {
+          "color": "blue",
+          "legendabbr": "И",
+          "mobilityrate": "1",
+          "position": "28",
+          "state": "implant"
+        },
+        {
+          "color": "blue",
+          "legendabbr": "И",
+          "mobilityrate": "1",
+          "position": "31",
+          "state": "implant"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "32",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "33",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "34",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "35",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "",
+          "position": "36",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "37",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "38",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "41",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "42",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "43",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "44",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "45",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "46",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "47",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "48",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "51",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "52",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "53",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "54",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "55",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "61",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "62",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "63",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "64",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "65",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "71",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "72",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "73",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "74",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "75",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "81",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "82",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "83",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "84",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "85",
+          "state": "heal"
+        }
+      ]
+    },
+    {
+      "adress": "Петроградская набережная 3",
+      "birthday": "20.01.1991",
+      "fullname": "Иванова Наталья Петровна",
+      "gender": "Женский",
+      "id": "2",
+      "mail": "ivani4@gmaыфвсфывil.com",
+      "phone": "+7999777777",
+      "serviceHistory": [{
+          "Врач": "Ананасов Василий Петрович",
+          "Дата": "09.10.2017",
+          "Комментарии": "Сильное разрушение у корней,решено удалять",
+          "Номер зуба": "14",
+          "Процедуры": "Осмотр"
+        },
+        {
+          "Врач": "Докторов Иван Иванович",
+          "Дата": "10.10.2017",
+          "Комментарии": "Удаление прошло успешно, осложнений нет",
+          "Номер зуба": "14",
+          "Процедуры": "Удаление зуба"
+        }
+      ],
+      "tooth_map": [{
+          "color": "gray",
+          "legendabbr": "О",
+          "mobilityrate": "0",
+          "position": "11",
+          "state": "removed"
+        },
+        {
+          "color": "blue",
+          "legendabbr": "И",
+          "mobilityrate": "1",
+          "position": "12",
+          "state": "implant"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "",
+          "position": "13",
+          "state": "heal"
+        },
+        {
+          "color": "gray",
+          "legendabbr": "О",
+          "mobilityrate": "0",
+          "position": "14",
+          "state": "removed"
+        },
+        {
+          "color": "green",
+          "legendabbr": " ",
+          "mobilityrate": "",
+          "position": "15",
+          "state": "heal"
+        },
+        {
+          "color": "blue",
+          "legendabbr": "И",
+          "mobilityrate": "1",
+          "position": "16",
+          "state": "implant"
+        },
+        {
+          "color": "blue",
+          "legendabbr": "И",
+          "mobilityrate": "1",
+          "position": "17",
+          "state": "implant"
+        },
+        {
+          "color": "blue",
+          "legendabbr": "И",
+          "mobilityrate": "",
+          "position": "18",
+          "state": "implant"
+        },
+        {
+          "color": "blue",
+          "legendabbr": "И",
+          "mobilityrate": "",
+          "position": "21",
+          "state": "implant"
+        },
+        {
+          "color": "blue",
+          "legendabbr": "И",
+          "mobilityrate": "1",
+          "position": "22",
+          "state": "implant"
+        },
+        {
+          "color": "blue",
+          "legendabbr": "И",
+          "mobilityrate": "1",
+          "position": "23",
+          "state": "implant"
+        },
+        {
+          "color": "blue",
+          "legendabbr": "И",
+          "mobilityrate": "1",
+          "position": "24",
+          "state": "implant"
+        },
+        {
+          "color": "blue",
+          "legendabbr": "И",
+          "mobilityrate": "1",
+          "position": "25",
+          "state": "implant"
+        },
+        {
+          "color": "blue",
+          "legendabbr": "И",
+          "mobilityrate": "1",
+          "position": "26",
+          "state": "implant"
+        },
+        {
+          "color": "blue",
+          "legendabbr": "И",
+          "mobilityrate": "1",
+          "position": "27",
+          "state": "implant"
+        },
+        {
+          "color": "blue",
+          "legendabbr": "И",
+          "mobilityrate": "1",
+          "position": "28",
+          "state": "implant"
+        },
+        {
+          "color": "blue",
+          "legendabbr": "И",
+          "mobilityrate": "1",
+          "position": "31",
+          "state": "implant"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "32",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "33",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "34",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "35",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "",
+          "position": "36",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "37",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "38",
+          "state": "heal"
+        },
+        null,
+        null,
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "41",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "42",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "43",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "44",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "45",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "46",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "47",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "48",
+          "state": "heal"
+        },
+        null,
+        null,
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "51",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "52",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "53",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "54",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "55",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "61",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "62",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "63",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "64",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "65",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "71",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "72",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "73",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "74",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "75",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "81",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "82",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "83",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "84",
+          "state": "heal"
+        },
+        {
+          "color": "white",
+          "legendabbr": " ",
+          "mobilityrate": "0",
+          "position": "85",
+          "state": "heal"
+        }
+      ]
+    }
+  ]
+}

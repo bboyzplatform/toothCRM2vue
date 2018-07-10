@@ -15,13 +15,15 @@ var config = {
   storageBucket: "agreevata.appspot.com",
   messagingSenderId: "647265325353"
 };
-
 firebase.initializeApp(config);
+
 const database = firebase.database()
 
-database.ref('customer').on('value', (snapshot)=>{
+
+database.ref('customers').on('value', (snapshot)=>{
   console.log(snapshot.val())
 })
+
 
 
 /* firebase.auth().onAuthStateChanged(function(user){
@@ -34,7 +36,7 @@ database.ref('customer').on('value', (snapshot)=>{
       template: '<App/>',
       data: function(){
         return {
-          customers: []
+          database
       }
     }
     })

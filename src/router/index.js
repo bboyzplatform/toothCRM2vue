@@ -1,12 +1,16 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import firebase from 'firebase'
+
+
+
 import Login from '@/components/Login'
 import SignUp from '@/components/SignUp'
 import ToothCRM from '@/components/ToothCRM'
-import firebase from 'firebase'
 import Vuesax from 'vuesax'
 import 'vuesax/dist/vuesax.css' //Vuesax styles
+
+
 Vue.use(Vuesax)
 Vue.use(Router)
 
